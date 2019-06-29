@@ -10,6 +10,8 @@ class App < Sinatra::Base
 
     post '/team' do
     'hello world'
+    @team=Team.new( params[:team][:name],params[:team][:motto])
+    
     end
 
 
